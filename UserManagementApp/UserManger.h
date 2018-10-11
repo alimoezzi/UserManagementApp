@@ -1,5 +1,7 @@
 #pragma once
 #include<string>
+#include<list>
+#include"user.h"
 using namespace std;
 class Hasher {
 public:
