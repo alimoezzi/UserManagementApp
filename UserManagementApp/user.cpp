@@ -9,6 +9,10 @@ User::User(string useranme, string password,string firstname,string lastname) :p
 	_useranme(useranme), _paswordHash(Hasher(password)) {
 }
 
+const string & User::getUsername() {
+	return _useranme;
+}
+
 User::User(string useranme, string password) :
 	_useranme(useranme), _paswordHash(Hasher(password)) {
 }

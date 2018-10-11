@@ -13,4 +13,5 @@ private:
 public:
 	User(string useranme, string password);
 	User(string useranme, string password, string firstname, string lastname);
+	const string& getUsername();
 };
