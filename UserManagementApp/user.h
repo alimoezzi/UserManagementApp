@@ -6,10 +6,10 @@ class User {
 private:
 	string _useranme;
 	std::size_t _paswordHash;
-	User() {};
 	bool checkPassword(string password);
 	Hasher a;
 	Profile profile;
+	User(){};
 public:
 	User(string useranme, string password, string firstname, string lastname);
 };

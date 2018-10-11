@@ -5,5 +5,5 @@ class Profile {
 	string _firstname;
 	string _lastname;
 public:
-	Profile(string firstname, string lastname);
+	Profile(string firstname="", string lastname="");
 };
