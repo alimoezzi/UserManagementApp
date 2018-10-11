@@ -11,5 +11,6 @@ private:
 	Profile profile;
 	User(){};
 public:
+	User(string useranme, string password);
 	User(string useranme, string password, string firstname, string lastname);
 };
