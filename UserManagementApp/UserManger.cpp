@@ -8,4 +8,3 @@ std::size_t Hasher(string const& s){
 	return (h1 << 1);
 }
 
-std::list<User> userList({User("cppadmin","q!Edf@42b"), });
