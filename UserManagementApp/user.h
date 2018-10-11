@@ -1,13 +1,13 @@
 #pragma once
 #include<string>
 #include"profile.h"
+#include"UserManger.h"
 using namespace std;
 class User {
 private:
 	string _useranme;
 	std::size_t _paswordHash;
 	bool checkPassword(string password);
-	Hasher a;
 	Profile profile;
 	User(){};
 public:

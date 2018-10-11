@@ -3,7 +3,4 @@
 #include<list>
 #include"user.h"
 using namespace std;
-class Hasher {
-public:
-	std::size_t operator()(string const& s) const;
-};
+std::size_t Hasher(string const& s);

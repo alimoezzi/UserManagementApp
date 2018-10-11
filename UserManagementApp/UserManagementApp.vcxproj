@@ -18,6 +18,20 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="login.h" />
+    <ClInclude Include="logout.h" />
+    <ClInclude Include="profile.h" />
+    <ClInclude Include="siqnup.h" />
+    <ClInclude Include="user.h" />
+    <ClInclude Include="UserManger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="profile.cpp" />
+    <ClCompile Include="user.cpp" />
+    <ClCompile Include="UserManger.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{12A3C977-F29C-44B3-BFB4-D107E0CC95C8}</ProjectGuid>
@@ -114,8 +128,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
