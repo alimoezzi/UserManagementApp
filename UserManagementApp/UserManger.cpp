@@ -8,3 +8,4 @@ std::size_t Hasher(string const& s){
 	return (h1 << 1);
 }
 
+
