@@ -13,6 +13,7 @@ public:
 	static CurrentUser* getInstance();
 	Errors logout();
 	Errors operator()(string& username, string& password);
+	bool isLoggedIn();
 protected:
 	CurrentUser() {};
 private:

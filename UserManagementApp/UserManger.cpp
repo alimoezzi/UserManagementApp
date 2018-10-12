@@ -40,6 +40,13 @@ Errors CurrentUser::operator()(string & username, string & password) {
 	return USERNAMENOTFOUND;
 }
 
+bool CurrentUser::isLoggedIn() {
+	if (cu == nullptr) {
+		return false;
+	}
+	return true;
+}
+
 Errors signUp(string firstname, string lastname, string username, string password) {
 	if (password.length() < 8) {
 		return PasswordLength;
