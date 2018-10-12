@@ -11,12 +11,12 @@ enum Errors {
 class CurrentUser {
 public:
 	static CurrentUser* getInstance();
-	Errors login(User *user);
 	Errors logout();
 	Errors operator()(string& username, string& password);
 protected:
 	CurrentUser() {};
 private:
+	Errors login(User *user);
 	static CurrentUser* instance;
 	static User* cu;
 };
