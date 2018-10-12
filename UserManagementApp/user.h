@@ -9,7 +9,7 @@ private:
 	std::size_t _paswordHash;
 	bool checkPassword(string password);
 	Profile profile;
-	User(){};
+	User();
 public:
 	User(string useranme, string password);
 	User(string useranme, string password, string firstname, string lastname);
