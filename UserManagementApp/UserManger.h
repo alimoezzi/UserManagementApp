@@ -5,6 +5,11 @@
 using namespace std;
 
 
+#ifndef _INCLUDELIST
+#define _INCLUDELIST
+std::list<User> userList({ User("cppadmin","q!Edf@42b"), });
+#endif // !_INCLUDELIST
+
 enum Errors {
 	Ok, ExistingUser,PasswordLength,NOTYETLOGGEDIN,PASSWORDWRONG,USERNAMENOTFOUND,ALREADYLOGGEDIN, ALREADYLOGGEDOUT,SUCCESSFULLLOGIN
 };
@@ -24,4 +29,4 @@ private:
 
 Errors signUp(string firstname, string lastname, string username, string password);
 
-std::list<User> userList({ User("cppadmin","q!Edf@42b"), });
+
