@@ -19,17 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="login.h" />
-    <ClInclude Include="logout.h" />
     <ClInclude Include="profile.h" />
-    <ClInclude Include="siqnup.h" />
     <ClInclude Include="user.h" />
     <ClInclude Include="UserManger.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="profile.cpp" />
-    <ClCompile Include="siqnup.cpp" />
     <ClCompile Include="user.cpp" />
     <ClCompile Include="UserManger.cpp" />
   </ItemGroup>

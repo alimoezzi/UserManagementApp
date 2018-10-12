@@ -1,8 +1,10 @@
 #pragma once
 #include<string>
 #include"profile.h"
-#include"UserManger.h"
 using namespace std;
+
+std::size_t Hasher(string const& s);
+
 class User {
 private:
 	string _useranme;

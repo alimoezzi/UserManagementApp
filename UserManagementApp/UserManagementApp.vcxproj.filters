@@ -15,15 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="login.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="logout.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="siqnup.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="user.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -45,9 +36,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="siqnup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

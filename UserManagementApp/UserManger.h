@@ -3,8 +3,7 @@
 #include<list>
 #include"user.h"
 using namespace std;
-std::size_t Hasher(string const& s);
-std::list<User> userList({ User("cppadmin","q!Edf@42b"), });
+
 
 enum Errors {
 	Ok, ExistingUser,PasswordLength,NOTYETLOGGEDIN,PASSWORDWRONG,USERNAMENOTFOUND,ALREADYLOGGEDIN, ALREADYLOGGEDOUT,SUCCESSFULLLOGIN
@@ -13,10 +12,16 @@ enum Errors {
 class CurrentUser {
 public:
 	static CurrentUser* getInstance(User* user);
-	int login(User *user);
-	int logout();
+	Errors login(User *user);
+	Errors logout();
+	Errors operator()(string& username, string& password);
+protected:
+	CurrentUser() {};
 private:
-	CurrentUser();
 	static CurrentUser* instance;
 	User* cu;
 };
+
+Errors signUp(string firstname, string lastname, string username, string password);
+
+std::list<User> userList({ User("cppadmin","q!Edf@42b"), });
