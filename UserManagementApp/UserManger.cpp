@@ -17,7 +17,7 @@ Errors CurrentUser::login(User* user) {
 		return ALREADYLOGGEDIN;
 	}
 	this->cu = user;
-	return Ok;
+	return SUCCESSFULLLOGIN;
 }
 
 Errors CurrentUser::logout() {
@@ -32,8 +32,7 @@ Errors CurrentUser::operator()(string & username, string & password) {
 	for (User a : userList) {
 		if (a.getUsername() == username) {
 			if (a.checkPassword(password)) {
-				login(&a);
-				return SUCCESSFULLLOGIN;
+				return login(&a);
 			}
 			return PASSWORDWRONG;
 		}
