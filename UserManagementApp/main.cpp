@@ -18,8 +18,8 @@ int main(int argc, char ** argv) {
 
 
 int prompt() {
-	puts("Choose an Option\n1. login \n2. logout \n3. signup \n4. exit");
-
+	if(!currentuser->isLoggedIn()) puts("Choose an Option\n1. login \n3. signup \n4. exit");
+	if (currentuser->isLoggedIn()) puts("Choose an Option\n2. logout \n4. exit");
 	int s;
 
 	cin >> s;
@@ -34,6 +34,7 @@ int	jump(jumpList s) {
 		string lastname;
 	switch (s) {
 	case LOGIN:
+		if (currentuser->isLoggedIn()) return 1;
 		cout << "username: ";
 		cin >> username;
 		cout << "password: ";
@@ -42,17 +43,19 @@ int	jump(jumpList s) {
 		return 1;
 		break;
 	case LOGOUT:
+		if (!currentuser->isLoggedIn()) return 1;
 		errorHandler(currentuser->logout());
 		return 1;
 		break;
 	case SIGNUP:
+		if (currentuser->isLoggedIn()) return 1;
 		cout << "firstname: ";
 		cin >> firstanme;
 		cout << "lastname: ";
 		cin >> lastname;
 		cout << "username: ";
 		cin >> username;
-		cout << "lastname: ";
+		cout << "password: ";
 		cin >> password;
 		errorHandler(signUp(firstanme, lastname, username, password));
 		return 1;
