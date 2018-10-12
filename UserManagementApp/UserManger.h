@@ -11,7 +11,7 @@ enum Errors {
 
 class CurrentUser {
 public:
-	static CurrentUser* getInstance(User* user);
+	static CurrentUser* getInstance();
 	Errors login(User *user);
 	Errors logout();
 	Errors operator()(string& username, string& password);
@@ -19,7 +19,7 @@ protected:
 	CurrentUser() {};
 private:
 	static CurrentUser* instance;
-	User* cu;
+	static User* cu;
 };
 
 Errors signUp(string firstname, string lastname, string username, string password);

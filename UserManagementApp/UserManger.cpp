@@ -4,11 +4,11 @@
 using namespace std;
 
 CurrentUser* CurrentUser::instance = 0;
+User* CurrentUser::cu = nullptr;
 
-CurrentUser* CurrentUser::getInstance(User* user) {
+CurrentUser* CurrentUser::getInstance() {
 	if (instance == 0) {
 		instance = new CurrentUser();
-		instance->cu = user;
 	};
 	return instance;
 }
