@@ -5,7 +5,7 @@ using namespace std;
 
 CurrentUser* CurrentUser::instance = 0;
 User* CurrentUser::cu = nullptr;
-
+std::list<User> userList({ User("cppadmin","q!Edf@42b"), });
 CurrentUser* CurrentUser::getInstance() {
 	if (instance == 0) {
 		instance = new CurrentUser();
