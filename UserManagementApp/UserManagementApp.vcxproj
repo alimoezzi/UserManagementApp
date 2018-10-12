@@ -29,6 +29,7 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="profile.cpp" />
+    <ClCompile Include="siqnup.cpp" />
     <ClCompile Include="user.cpp" />
     <ClCompile Include="UserManger.cpp" />
   </ItemGroup>
